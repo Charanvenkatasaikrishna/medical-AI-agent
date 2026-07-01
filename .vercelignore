@@ -1,0 +1,9 @@
+*
+!index.html
+!styles.css
+!script.js
+!package.json
+!package-lock.json
+!assets/
+assets/*
+!assets/ai-health-system.jpeg

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareSignal AI | Non-Invasive Communication Platform</title>
+  <meta
+    name="description"
+    content="CareSignal AI is a non-invasive wearable communication platform that translates physiological signals into caregiver-ready messages."
+  >
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23071b2c'/%3E%3Cpath d='M16 34h8l4-12 8 24 5-12h7' fill='none' stroke='%2304a9a5' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="CareSignal AI home">
+      <span class="brand-mark">CS</span>
+      <span>CareSignal AI</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#methodology">Methodology</a>
+      <a href="#agent">AI Agent</a>
+      <a href="#performance">Performance</a>
+      <a href="#future">Future</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero-section">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Non-invasive wearable intelligence</p>
+          <h1>AI communication for people who cannot speak.</h1>
+          <p class="hero-lede">
+            CareSignal AI interprets heart rhythm, movement, temperature, skin response, muscle activity, and optional EEG signals to express pain, stress, fatigue, comfort, and basic needs in simple language.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#agent">Open AI Agent</a>
+            <a class="button button-secondary" href="#methodology">View Research Plan</a>
+          </div>
+        </div>
+
+        <section class="live-console" aria-label="Live AI health assistant preview">
+          <div class="console-top">
+            <span class="status-dot"></span>
+            <span>Live Assistive Output</span>
+          </div>
+          <div class="phone-shell">
+            <div class="phone-header">
+              <span>CareSignal</span>
+              <strong>8:41</strong>
+            </div>
+            <div class="primary-alert" id="hero-alert">
+              <span>Current Message</span>
+              <strong>I feel stressed.</strong>
+              <p>Confidence 87% from HRV, GSR, motion, and skin temperature fusion.</p>
+            </div>
+            <div class="signal-stack">
+              <div>
+                <span>Heart Rate</span>
+                <strong id="hero-hr">104 bpm</strong>
+              </div>
+              <div>
+                <span>Stress</span>
+                <strong id="hero-stress">82%</strong>
+              </div>
+              <div>
+                <span>Pain</span>
+                <strong id="hero-pain">48%</strong>
+              </div>
+            </div>
+            <button class="button button-alert" type="button" id="hero-caregiver">Alert Caregiver</button>
+          </div>
+        </section>
+      </div>
+      <div class="hero-proof" aria-label="Platform signals">
+        <article>
+          <strong>200</strong>
+          <span>Recruitment participants across baseline and disability groups</span>
+        </article>
+        <article>
+          <strong>8+</strong>
+          <span>Wearable biosignal channels for multimodal analysis</span>
+        </article>
+        <article>
+          <strong>24/7</strong>
+          <span>Personal calibration and continuous learning support</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="mission-band">
+      <div>
+        <p class="eyebrow">Mission</p>
+        <h2>Restoring dignity through readable body signals.</h2>
+      </div>
+      <p>
+        To create the world's most advanced non-invasive AI communication platform that empowers people with severe physical disabilities to express emotions, pain, stress, comfort, and basic communication needs through wearable technology and personalized artificial intelligence.
+      </p>
+    </section>
+
+    <section class="split-section">
+      <div class="section-copy">
+        <p class="eyebrow">System Concept</p>
+        <h2>Multi-sensor input, AI processing, caregiver-ready output.</h2>
+        <p>
+          The platform focuses on scientifically supported physiological interpretation rather than direct thought reading. It turns complex sensor streams into clear messages family members, caregivers, and clinicians can act on quickly.
+        </p>
+      </div>
+      <figure class="reference-figure">
+        <img src="assets/ai-health-system.jpeg" alt="AI powered multimodal health monitoring and disease detection concept diagram">
+        <figcaption>Concept direction: wearable signals, multimodal AI processing, and real-time mobile output.</figcaption>
+      </figure>
+    </section>
+
+    <section id="methodology" class="methodology-section">
+      <div class="section-heading">
+        <p class="eyebrow">Research Methodology</p>
+        <h2>Six phases from controlled study to personalized daily use.</h2>
+      </div>
+
+      <div class="phase-grid">
+        <article class="phase-card">
+          <span>01</span>
+          <h3>Participant Recruitment</h3>
+          <p>Group A recruits 100 healthy individuals for baseline physiological data. Group B recruits 100 people with paralysis, ALS, stroke, cerebral palsy, locked-in syndrome, or severe speech impairment.</p>
+        </article>
+        <article class="phase-card">
+          <span>02</span>
+          <h3>Wearable Sensor Data</h3>
+          <p>Smartwatches, rings, and headbands collect HR, HRV, SpO2, skin temperature, GSR, motion, EMG, and optional EEG for secure AI analysis.</p>
+        </article>
+        <article class="phase-card">
+          <span>03</span>
+          <h3>Standardized Testing</h3>
+          <p>Participants complete emotional, physical, cognitive, and communication tests. Ratings like pain 8/10 or stress 6/10 become ground truth labels.</p>
+        </article>
+        <article class="phase-card">
+          <span>04</span>
+          <h3>AI Model Training</h3>
+          <p>Machine learning connects signal combinations with stress, pain, relaxation, anxiety, fatigue, and other user states using thousands of examples.</p>
+        </article>
+        <article class="phase-card">
+          <span>05</span>
+          <h3>Personal Calibration</h3>
+          <p>Each new user completes several days of calibration so the model learns their unique body patterns and improves prediction accuracy.</p>
+        </article>
+        <article class="phase-card">
+          <span>06</span>
+          <h3>Continuous Learning</h3>
+          <p>The AI keeps adapting during daily use, becoming more accurate as caregivers confirm or correct predicted needs and emotional states.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="agent" class="agent-section">
+      <div class="agent-copy">
+        <p class="eyebrow">AI Agent</p>
+        <h2>CareSignal Agent converts biosignals into human messages.</h2>
+        <p>
+          Adjust the simulated wearable readings and run an analysis. The upgraded medical agent combines biosignal patterns, symptom keywords, red-flag screening, and caregiver guidance to explain what may need attention.
+        </p>
+      </div>
+
+      <div class="agent-workspace">
+        <section class="sensor-panel" aria-label="Sensor simulation controls">
+          <div class="panel-head">
+            <h3>Wearable Input</h3>
+            <span id="profile-name">Calibrated profile</span>
+          </div>
+
+          <div class="profile-tabs" role="tablist" aria-label="Simulation presets">
+            <button class="profile-tab active" type="button" data-profile="stress">Stress</button>
+            <button class="profile-tab" type="button" data-profile="pain">Pain</button>
+            <button class="profile-tab" type="button" data-profile="fatigue">Fatigue</button>
+            <button class="profile-tab" type="button" data-profile="relaxed">Relaxed</button>
+          </div>
+
+          <label class="sensor-control">
+            <span>Heart Rate <strong id="hr-value">108 bpm</strong></span>
+            <input id="hr" type="range" min="55" max="145" value="108">
+          </label>
+          <label class="sensor-control">
+            <span>HRV <strong id="hrv-value">34 ms</strong></span>
+            <input id="hrv" type="range" min="15" max="95" value="34">
+          </label>
+          <label class="sensor-control">
+            <span>GSR <strong id="gsr-value">72%</strong></span>
+            <input id="gsr" type="range" min="5" max="100" value="72">
+          </label>
+          <label class="sensor-control">
+            <span>Skin Temperature <strong id="temp-value">37.6 C</strong></span>
+            <input id="temp" type="range" min="330" max="395" value="376">
+          </label>
+          <label class="sensor-control">
+            <span>Muscle Activity <strong id="emg-value">64%</strong></span>
+            <input id="emg" type="range" min="0" max="100" value="64">
+          </label>
+          <label class="sensor-control">
+            <span>Motion Instability <strong id="motion-value">45%</strong></span>
+            <input id="motion" type="range" min="0" max="100" value="45">
+          </label>
+
+          <button class="button button-primary analyze-button" type="button" id="analyze-button">Analyze Signals</button>
+        </section>
+
+        <section class="agent-panel" aria-live="polite">
+          <div class="panel-head">
+            <h3>Agent Output</h3>
+            <span id="agent-confidence">Confidence 87%</span>
+          </div>
+
+          <div class="message-card">
+            <span>Simple message</span>
+            <strong id="agent-message">I feel stressed.</strong>
+            <p id="agent-summary">Elevated heart rate, low HRV, and high GSR suggest stress or discomfort.</p>
+          </div>
+
+          <div class="score-list">
+            <div>
+              <span>Stress</span>
+              <meter id="stress-meter" min="0" max="100" value="82"></meter>
+              <strong id="stress-score">82%</strong>
+            </div>
+            <div>
+              <span>Pain</span>
+              <meter id="pain-meter" min="0" max="100" value="58"></meter>
+              <strong id="pain-score">58%</strong>
+            </div>
+            <div>
+              <span>Fatigue</span>
+              <meter id="fatigue-meter" min="0" max="100" value="42"></meter>
+              <strong id="fatigue-score">42%</strong>
+            </div>
+            <div>
+              <span>Relaxation</span>
+              <meter id="relax-meter" min="0" max="100" value="18"></meter>
+              <strong id="relax-score">18%</strong>
+            </div>
+          </div>
+
+          <div class="agent-log" id="agent-log">
+            <p><strong>Agent:</strong> Monitoring wearable stream and caregiver confirmations.</p>
+          </div>
+        </section>
+      </div>
+
+      <section class="medical-agent" aria-label="Medical knowledge AI agent">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Medical Knowledge Agent</p>
+            <h3>Ask a medically aware caregiver assistant.</h3>
+          </div>
+          <span>Evidence-aware triage</span>
+        </div>
+
+        <div class="medical-grid">
+          <div class="medical-query">
+            <label for="medical-question">Caregiver question or observed symptoms</label>
+            <textarea id="medical-question" rows="5">User has high heart rate, sweating, chest pressure, and shortness of breath.</textarea>
+            <div class="symptom-toggles" aria-label="Quick symptom chips">
+              <button type="button" data-symptom="chest pressure and shortness of breath">Chest pressure</button>
+              <button type="button" data-symptom="one-sided weakness and speech trouble">Stroke signs</button>
+              <button type="button" data-symptom="dark urine, dizziness, and dry mouth">Dehydration</button>
+              <button type="button" data-symptom="fever, hot skin, and confusion">Fever confusion</button>
+              <button type="button" data-symptom="severe pain that is getting worse">Severe pain</button>
+            </div>
+            <button class="button button-primary" type="button" id="medical-analyze-button">Ask Medical Agent</button>
+            <p class="medical-disclaimer">
+              This assistant supports caregiver decisions and education. It does not diagnose, prescribe treatment, or replace emergency care or a licensed clinician.
+            </p>
+          </div>
+
+          <div class="medical-response" aria-live="polite">
+            <div class="risk-banner" id="medical-risk">Emergency red-flag check pending</div>
+            <div class="medical-answer" id="medical-answer">
+              <h4>Medical Agent Response</h4>
+              <p>Enter symptoms or use a quick chip, then ask the agent for a caregiver-focused explanation.</p>
+            </div>
+            <div class="knowledge-cards" id="knowledge-cards">
+              <article>
+                <span>Knowledge domains</span>
+                <strong>Pain, stress, dehydration, cardiac warning signs, stroke signs, infection risk, fatigue, comfort needs.</strong>
+              </article>
+              <article>
+                <span>Safety model</span>
+                <strong>Escalates chest pain, breathing trouble, sudden neurologic changes, severe confusion, fainting, or rapidly worsening symptoms.</strong>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="performance" class="performance-section">
+      <div class="section-heading">
+        <p class="eyebrow">Expected Performance</p>
+        <h2>Designed around realistic scientific limits.</h2>
+      </div>
+      <div class="metric-grid">
+        <article>
+          <span>Heart Rate Detection</span>
+          <strong>99%+</strong>
+        </article>
+        <article>
+          <span>HRV Analysis</span>
+          <strong>95%+</strong>
+        </article>
+        <article>
+          <span>Stress Detection</span>
+          <strong>85-95%</strong>
+        </article>
+        <article>
+          <span>Emotion Recognition</span>
+          <strong>75-90%</strong>
+        </article>
+        <article>
+          <span>Pain Estimation</span>
+          <strong>70-90%</strong>
+        </article>
+      </div>
+      <p class="science-note">
+        Direct thought reading without an implanted brain interface is not currently supported by scientific evidence. CareSignal AI focuses on interpreting physiological signals and personalized patterns.
+      </p>
+    </section>
+
+    <section id="future" class="future-section">
+      <div class="section-copy">
+        <p class="eyebrow">Future Development</p>
+        <h2>A non-invasive ecosystem for personalized health AI.</h2>
+      </div>
+      <div class="tech-grid">
+        <span>Artificial Intelligence</span>
+        <span>Machine Learning</span>
+        <span>Deep Learning</span>
+        <span>Biomedical Signal Processing</span>
+        <span>Wearable Biosensors</span>
+        <span>Edge Computing</span>
+        <span>Cloud Computing</span>
+        <span>Internet of Things</span>
+        <span>Bluetooth Low Energy</span>
+        <span>Mobile Applications</span>
+        <span>Smart Glasses</span>
+        <span>AI Language Models</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>CareSignal AI</span>
+    <p>AI + sensors for communication, safety, and dignity.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
